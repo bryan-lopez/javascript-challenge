@@ -37,11 +37,48 @@
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
                         <label for="date">Enter a Date</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+                        <select class="custom-select" id="date-select">
+                          <option value="" selected>-- e.g. 1/11/2011 --</option>
+                          <!-- Add options here -->
+                        </select>
                       </li>
+
+                      <li class="filter list-group-item">
+                        <label for="city">Choose a City</label>
+                        <select class="custom-select" id="city-select">
+                          <option value="" selected>-- e.g. colonia --</option>
+                          <!-- Add options here -->
+                        </select>
+                      </li>
+
+                      <li class="filter list-group-item">
+                        <label for="state">Choose a State</label>
+                        <select class="custom-select" id="state-select">
+                          <option value="" selected>-- e.g. ny --</option>
+                          <!-- Add options here -->
+                        </select>
+                      </li>
+
+                      <li class="filter list-group-item">
+                        <label for="country">Choose a Country</label>
+                        <select class="custom-select" id="country-select">
+                          <option value="" selected>-- e.g. us --</option>
+                          <!-- Add options here -->
+                        </select>
+                      </li>
+
+                      <li class="filter list-group-item">
+                        <label for="shape">Choose a Shape</label>
+                        <select class="custom-select" id="shape-select">
+                          <option value="" selected>-- e.g. fireball --</option>
+                          <!-- Add options here -->
+                        </select>
+                      </li>
+
                     </ul>
                   </div>
                   <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                  <button id="clear-btn" type="button" class="btn btn-default">Clear Selections</button>
                 </form>
               </div>
             </div>
